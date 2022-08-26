@@ -1,6 +1,6 @@
 'use strict'
 
-// create obj-s of all cards
+// shuffle for Azathoth
 
 import cardsDataGreen from './data/mythicCards/green/index.js';
 import cardsDataBrown from './data/mythicCards/brown/index.js';
@@ -41,4 +41,15 @@ let randomThirdAzathoth = shuffle(thirdAzathoth);
 let randomAzathoth = [...randomFirstAzathoth, ...randomSecondAzathoth, ...randomThirdAzathoth];
 
 
+
+// show cards for Azathoth
+let card = document.querySelector('.card');
+
+function showCard() {
+    console.log(randomAzathoth);
+    card.src = randomAzathoth[0].cardFace;
+    randomAzathoth.shift();
+}
+
+card.addEventListener('click', showCard);
 
