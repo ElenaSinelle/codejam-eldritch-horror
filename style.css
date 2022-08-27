@@ -64,7 +64,6 @@ button {
     padding: 5px 7px;
 }
 button:hover,
-button:focus,
 button:active {
     transition: 1s;
     background: #a67e7a;
