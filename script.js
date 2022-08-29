@@ -228,21 +228,3 @@ function showCard() {
 buttonCard.addEventListener('click', showCard);
 
 
-// counter
-
-    let counterGreen1 = 1;
-    let counterBrown1 = 2;
-    let counterBlue1 = 1;
-
-
-function countClicks() {
-    
-    if (randomAzathoth.color === 'green') {
-        document.getElementById('text-green-1').innerHTML = 0;
-    }
-    
-}
-
-
-
-card.addEventListener('click', countClicks);
