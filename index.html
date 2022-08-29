@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldritch Horror</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Eldritch Horror</h1>
+    </header>
+
+    <main class="main">
+        <section class="ancients">
+            <h2>Ancients</h2>
+            <div class="ancients-cards">
+                <input type="image" class="ancient azathoth" src="./assets/Ancients/Azathoth.webp" alt="Azathoth">
+                <input type="image" class="ancient cthulthu" src="./assets/Ancients/Cthulthu.webp" alt="Cthulthu">
+                <input type="image" class="ancient iogSothoth" src="./assets/Ancients/IogSothoth.webp" alt="IogSothoth">
+                <input type="image" class="ancient shubNiggurath" src="./assets/Ancients/ShubNiggurath.webp" alt="ShubNiggurath">
+            </div>
+        </section>
+
+        <section class="game-container">
+
+            <div class="difficulties">
+                <h2>Difficulty Level</h2>
+                <button class="very-easy">Very Easy</button>
+                <button class="easy">Easy</button>
+                <button class="middle">Only Middle Level Works</button>
+                <button class="hard">Difficult</button>
+                <button class="very-hard">Very Difficult</button>
+            </div>
+
+            <div class="counter">
+                <h2>Deck Counter</h2>
+                <h4>First Stage</h4>
+                <div class="stage first-stage">
+                    <div class="circle-container">
+                        <div class="circle green"></div>
+                        <div id="text-green-1" class="circle-text"></div>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle brown"></div>
+                        <div class="circle-text text-brown-1"></div>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle blue"></div>
+                        <div class="circle-text text-blue-1"></div>
+                    </div>
+                </div>
+
+                <h4>Second Stage</h4>
+                <div class="stage second-stage">
+                    <div class="circle-container">
+                        <div class="circle green"></div>
+                        <div class="circle-text text-green-2"></div>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle brown"></div>
+                        <div class="circle-text text-brown-2"></div>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle blue"></div>
+                        <div class="circle-text text-blue-2"></div>
+                    </div>
+                </div>
+
+                <h4>Third Stage</h4>
+                <div class="stage third-stage">
+                    <div class="circle-container">
+                        <div class="circle green"></div>
+                        <div class="circle-text text-green-3"></div>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle brown"></div>
+                        <div class="circle-text text-brown-3"></div>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle blue"></div>
+                        <div class="circle-text text-blue-3"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck">
+                <button class="show-card">Show Card</button>
+                <img class="card" src="./assets/mythicCardBackground.webp" alt="card background">
+            </div>
+
+        </section> 
+    </main>
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>

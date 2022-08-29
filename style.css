@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Magra";
+    src: url("./assets/Magra-font/Magra-Regular.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url("./assets/home.webp") center/cover, rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: 'Magra';
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color:  #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+h2 {
+    font-family: 'Magra';
+    font-style: normal;
+    font-size: 35px;
+    line-height: 37px;
+    font-weight: 600;
+    color:  #fff;
+    text-align: center;
+}
+h4 {
+    font-family: 'Magra';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color:  #fff;
+    text-align: center;
+}
+
+button {
+    font-family: 'Magra';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+    background: #360a57;
+    
+    border-radius: 10px;
+    border: none;
+    padding: 5px 7px;
+}
+button:hover,
+button:active {
+    transition: 1s;
+    background: #a67e7a;
+}
+
+.ancients-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 50px 20px 50px; 
+}
+.ancient, .card {
+    width: 147px;
+    height: 191px;
+    border-radius: 10px;
+    border: none;
+}
+
+.ancient-active {
+    transition: 0.7s;
+    border: solid #360a57;
+    transform: scale(1.2);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px 20px 50px; 
+}
+
+.difficulties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.circle {
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+}
+.green {
+    background: green;
+}
+.brown {
+    background: rgb(66, 6, 6);
+}
+.blue {
+    background: darkblue;
+}
+.circle-container {
+    position: relative;
+}
+.circle-text {
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 4px;
+    left: 13px;
+}
+
+.card-deck {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
