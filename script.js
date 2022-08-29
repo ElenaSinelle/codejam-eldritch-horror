@@ -227,4 +227,3 @@ function showCard() {
    
 buttonCard.addEventListener('click', showCard);
 
-
