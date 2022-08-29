@@ -15,7 +15,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: url("./assets/home.png") center/cover, rgba(0, 0, 0, 0.5);
+    background: url("./assets/home.webp") center/cover, rgba(0, 0, 0, 0.5);
 }
 
 h1 {

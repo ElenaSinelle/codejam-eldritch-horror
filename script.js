@@ -194,23 +194,35 @@ function showCard() {
         console.log(randomAzathoth);
         card.src = randomAzathoth[0].cardFace;
         randomAzathoth.shift();
-        if (randomAzathoth.length == 0) alert('No cards left for Azathoth');
+        if (randomAzathoth.length == 0) {
+            alert('No cards left for Azathoth');
+            card.src = './assets/mythicCardBackground.webp';
+        }
     } else if (selectedAncient == ancientsData[1]) {
         console.log(randomCthulthu);
         card.src = randomCthulthu[0].cardFace;
         randomCthulthu.shift();
-        if (randomCthulthu.length == 0) alert('No cards left for Cthulthu');
+        if (randomCthulthu.length == 0) {
+            alert('No cards left for Cthulthu');
+            card.src = './assets/mythicCardBackground.webp';
+        }
     } else if (selectedAncient == ancientsData[2]) {
         console.log(randomIogSothoth);
         card.src = randomIogSothoth[0].cardFace;
         randomIogSothoth.shift();
-        if (randomIogSothoth.length == 0) alert('No cards left for IogSothoth');
+        if (randomIogSothoth.length == 0) {
+            alert('No cards left for IogSothoth');
+            card.src = './assets/mythicCardBackground.webp';
+        }
     } else if (selectedAncient == ancientsData[3]) {
         console.log(randomShubNiggurath);
         card.src = randomShubNiggurath[0].cardFace;
         randomShubNiggurath.shift();
-        if (randomShubNiggurath.length == 0) alert('No cards left for ShubNiggurath');
+        if (randomShubNiggurath.length == 0) {
+            alert('No cards left for ShubNiggurath');
+            card.src = './assets/mythicCardBackground.webp';
     }
+}
 }
    
 buttonCard.addEventListener('click', showCard);
